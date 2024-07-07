@@ -42,21 +42,24 @@
             <span class="author-block">
               Miguel Zamora<sup>1</sup>,</span>                        
             <span class="author-block">
-              Hehui Zheng<sup>1,2</sup>,</span>
+              Hehui Zheng<sup>2,3</sup>,</span>
             <span class="author-block">
-              <a href="https://ait.ethz.ch/people/jzarate">Juan Zarate<sup>3</sup></a>,</span>
+              <a href="https://ait.ethz.ch/people/jzarate">Juan Zarate<sup>4</sup></a>,</span>
             <span class="author-block">
               <a href="https://crl.ethz.ch/people/coros/index.html">Stelian Coros<sup>1</sup></a>,
             </span>
           </div>
-          <div class="is-size-6 publication-authors">
+          <div class="is-size-7 publication-authors">
             <span class="author-block"><sup>1</sup>Computational Robotics Lab, Department of Computer Science, ETH Zurich</span>
-          </div>
-          <div class="is-size-6 publication-authors">
+          </div>          
+          <div class="is-size-7 publication-authors">
             <span class="author-block"><sup>2</sup>Soft Robotics Lab, Department of Mechanical Engineering, ETH Zurich</span>
           </div>
-          <div class="is-size-6 publication-authors">
-            <span class="author-block"><sup>3</sup>Advanced Interactive Technologies Lab, Department of Computer Science, ETH Zurich</span>
+          <div class="is-size-7 publication-authors">
+            <span class="author-block"><sup>3</sup>ETH AI Center, ETH Zurich</span>
+          </div>          
+          <div class="is-size-7 publication-authors">
+            <span class="author-block"><sup>4</sup>Advanced Interactive Technologies Lab, Department of Computer Science, ETH Zurich</span>
           </div>
           
         </div>
@@ -70,7 +73,26 @@
     <div class="hero-body">
 
       <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/gifs/dice_poke_v2.gif" style="width:47.5%; object-fit: cover; object-position: center ;" />
+          <img src="./static/gifs/dice-unscreen_v2.gif" style="width:47.5%; object-fit: cover; object-position: center ;" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
           <img src="./static/images/objects.png" style="width:100%; object-fit: cover; object-position: bottom ;" />
+
+          <img src="./static/gifs/octopus-unscreen.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
+          <img src="./static/gifs/paper2-unscreen.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
+          <img src="./static/gifs/duvet-2--unscreen.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
+          <img src="./static/gifs/dice-unscreen_v2.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
+          <img src="./static/gifs/couch2-unscreen.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
       </div>
 
       <h2 class="subtitle has-text-centered">
@@ -88,7 +110,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          Manipulating deformable objects is a significant challenge in robotics due to their high-dimensional and complex physical properties. While data-driven methods have shown potential for solving manipulation tasks, their application in the domain of deformable objects has been constrained by the lack of data capturing the deformation behaviour of objects. To address this, we introduce the PokeFlex dataset, featuring real-world 3D mesh data of deformed objects, along with the applied forces by a robotic arm poking the objects. Deformations are captured with a professional volumetric capture system that allows for complete 360-degree reconstruction. The PokeFlex dataset consists of five deformable objects with varying stiffness and shapes. Additionally, using the PokeFlex dataset, we train a model capable of predicting deformations in real-time with a single image and the template mesh. We refer readers to the supplementary material for demos and examples of our dataset.
+            Advancing robotic manipulation of deformable objects can enable automation of repetitive tasks across multiple industries, from food processing to textiles and healthcare. Yet robots struggle with the high dimensionality of deformable objects and their complex dynamics. While data-driven methods have shown potential for solving manipulation tasks, their application in the domain of deformable objects has been constrained by the lack of data. To address this, we propose PokeFlex, a pilot dataset featuring real-world 3D mesh data of actively deformed objects, together with the corresponding forces applied by a robotic arm, using a simple poking strategy. Deformations are captured with a professional volumetric capture system that allows for complete 360-degree reconstruction. The PokeFlex dataset consists of five deformable objects with varying stiffness and shapes. Additionally, we leverage the PokeFlex dataset to train a vision model for online 3D mesh reconstruction from a single image and a template mesh. We refer readers to the supplementary material for demos and examples of our dataset.
           </p>
         </div>
       </div>
