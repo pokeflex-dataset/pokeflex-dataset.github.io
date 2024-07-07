@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PokeFlex: Towards a Real-World Dataset of Deformable Objects in Robotic Manipulation.">
+  <meta name="keywords" content="Deformable Objects, Dataset">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> PokeFlex: Towards a Real-World Dataset of Deformable Objects in Robotic Manipulation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="./static/css/bulma-carousel.min.css"> -->
+  <!-- <link rel="stylesheet" href="./static/css/bulma-slider.min.css"> -->
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <!-- <script src="./static/js/index.js"></script> -->
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PokeFlex: Towards a Real-World Dataset of Deformable Objects in Robotic Manipulation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Jan Obrist,</span>
+            <span class="author-block">
+              Miguel Zamora,</span>                        
+            <span class="author-block">
+              Hehui Zheng,</span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/jzarate">Juan Zarate</a>,</span>
+            <span class="author-block">
+              <a href="https://crl.ethz.ch/people/coros/index.html">Stelian Coros</a>,
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Computational Robotics Lab, Department of Computer Science, ETH Zurich</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Soft Robotics Lab, Department of Mechanical Engineering, ETH Zurich</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Advanced Interactive Technologies Lab, Department of Computer Science, ETH Zurich</span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/objects.png" style="width:100%; object-fit: cover; object-position: bottom ;" />
+      </div>
+
+      <h2 class="subtitle has-text-centered">
+        PokeFlex is a dataset containing 3D mesh models of deformable objects.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Manipulating deformable objects is a significant challenge in robotics due to their high-dimensional and complex physical properties. While data-driven methods have shown potential for solving manipulation tasks, their application in the domain of deformable objects has been constrained by the lack of data capturing the deformation behaviour of objects. To address this, we introduce the PokeFlex dataset, featuring real-world 3D mesh data of deformed objects, along with the applied forces by a robotic arm poking the objects. Deformations are captured with a professional volumetric capture system that allows for complete 360-degree reconstruction. The PokeFlex dataset consists of five deformable objects with varying stiffness and shapes. Additionally, using the PokeFlex dataset, we train a model capable of predicting deformations in real-time with a single image and the template mesh. We refer readers to the supplementary material for demos and examples of our dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{authors,
+  author    = {Obrist, Jan and Zamora, Miguel and Zheng, Hehui and Zarate, Juan and Coros, Stelian},
+  title     = {PokeFlex: Towards a Real-World Dataset of Deformable Objects in Robotic Manipulation},
+  year      = {2024}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      The website (<a href="https://github.com/tapas-dataset/tapas-dataset.github.io">source code</a>) design was adapted from <a href="https://nerfies.github.io" class="external-link"><span
+        class="dnerf">Nerfies</span></a>.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
