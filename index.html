@@ -26,6 +26,28 @@
   <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
   <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
   <!-- <script src="./static/js/index.js"></script> -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+  
+  <style>
+    .container-mesh {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+
+    .responsive-iframe-mesh {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -126,20 +148,47 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
-
-    <!--/ Interactive 3D visualization. -->    
-    <!--
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Interactive Visualization</h2>
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
-        <div w3-include-html="./static/reconstructions/small_mesh_animation.html"></div>        
-      </div>
-    </div> -->
+    </div>   
     
   </div>
 </section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <div class="columns is-centered">
+    <div class="column has-text-centered">
+
+        <h2 class="title is-3">Interactive Visualization</h2>   
+        <div class="container-mesh">      
+            <iframe class="responsive-iframe-mesh" src="./static/reconstructions/mesh_animation_m1_div.html" allow="autoplay;" ></iframe>                  
+        </div>
+        
+        <div class="content has-text-justified">          
+          <p>
+          <ul>
+              <li>The plot on the left illustrates the 3D mesh reconstructed using a professional volumetric capture system for a toilet paper roll.
+              The dotted red line donotes the trajectory of the robot's end-effector executing a poking strategy.</li>
+              <li>The plot on the right shows the magnitud of the force applied by the end effector on the toilet paper roll. </li>
+          </ul>
+ 
+          
+          </p>
+          <p>
+          Notes:
+          <ul>
+              <li>Feel free to rotate the 3D mesh on the left.</li>
+              <li>Consider pressiong the Stop button and then pressing the Play button again, if playback is slow.</li>
+          </ul>
+          </p>
+        </div>        
+        
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
+
 
 
 <section class="section" id="BibTeX">
