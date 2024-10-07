@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="PokeFlex: Towards a Real-World Dataset of Deformable Objects for Robotic Manipulation.">
+        content="PokeFlex: A Real-World Dataset of Deformable Objects for Robotics.">
   <meta name="keywords" content="Deformable Objects, Dataset">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> PokeFlex: Towards a Real-World Dataset of Deformable Objects for Robotic Manipulation</title>
+  <title> PokeFlex: A Real-World Dataset of Deformable Objects for Robotics</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   
@@ -57,34 +57,43 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PokeFlex: Towards a Real-World Dataset of Deformable Objects for Robotic Manipulation</h1>
+          <h1 class="title is-1 publication-title">PokeFlex: A Real-World Dataset of Deformable Objects for Robotics</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               Jan Obrist<sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://miguelzamoram.github.io/">Miguel Zamora<sup>1</sup></a>,</span>
             <span class="author-block">
-              <a href="https://srl.ethz.ch/the-group/people/hehui-zheng.html">Hehui Zheng<sup>2,3</sup></a>,</span>
+              <a href="https://srl.ethz.ch/the-group/people/hehui-zheng.html">Hehui Zheng<sup>2,3</sup></a>,</span>            
             <span class="author-block">
-              <a href="https://ait.ethz.ch/people/jzarate">Juan Zarate<sup>4</sup></a>,</span>
+              Ronan Hinchet<sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://srl.ethz.ch/the-group/prof-robert-katzschmann.html">Robert K. Katzschmann<sup>2</sup></a>,</span>  
+              <a href="https://firatozdemir.github.io/">Firat Ozdemir<sup>4</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/jzarate">Juan Zarate<sup>5</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://srl.ethz.ch/the-group/prof-robert-katzschmann.html">Robert K. Katzschmann<sup>2,3</sup></a>,</span>  
             <span class="author-block">
               <a href="https://crl.ethz.ch/people/coros/index.html">Stelian Coros<sup>1</sup></a>,
             </span>
           </div>
           <div class="is-size-7 publication-authors">
-            <span class="author-block"><sup>1</sup>Computational Robotics Lab, Department of Computer Science, ETH Zurich</span>
-          </div>          
-          <div class="is-size-7 publication-authors">
-            <span class="author-block"><sup>2</sup>Soft Robotics Lab, Department of Mechanical Engineering, ETH Zurich</span>
+            <span class="author-block"><sup>1</sup>Computational Robotics Lab, Department of Computer Science, ETH Zurich</span>            
           </div>
-          <div class="is-size-7 publication-authors">
-            <span class="author-block"><sup>3</sup>ETH AI Center, ETH Zurich</span>
-          </div>          
-          <div class="is-size-7 publication-authors">
-            <span class="author-block"><sup>4</sup>Advanced Interactive Technologies Lab, Department of Computer Science, ETH Zurich</span>
+          <div class="is-size-7 publication-authors">            
+            <span class="author-block"><sup>2</sup>Soft Robotics Lab, Department of Mechanical Engineering, ETH Zurich</span>    
           </div>
+          <div class="is-size-7 publication-authors">                        
+            <span class="author-block"><sup>3</sup>ETH AI Center, ETH Zurich</span>          
+          </div>
+          <div class="is-size-7 publication-authors">                                    
+            <span class="author-block"><sup>4</sup>Swiss Data Science Center, ETH Zurich and EPFL</span>            
+          </div>                                        
+          <div class="is-size-7 publication-authors">                                                
+            <span class="author-block"><sup>5</sup>Advanced Interactive Technologies Lab, Department of Computer Science, ETH Zurich</span>
+          </div>                                        
+
+          
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -99,7 +108,13 @@
                 </a>
               </span>
             </div>
-          </div>      
+          </div>
+          
+          <div class="columns is-centered"></div>
+            <div class="column has-text-centered">
+              <sup>+</sup> Website might take some time to load the first time.          
+            </div>
+          </div>
           
         </div>
       </div>
@@ -148,24 +163,17 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
+          <!--p>
             Advancing robotic manipulation of deformable objects can enable automation of repetitive tasks across multiple industries, from food processing to textiles and healthcare. Yet robots struggle with the high dimensionality of deformable objects and their complex dynamics. While data-driven methods have shown potential for solving manipulation tasks, their application in the domain of deformable objects has been constrained by the lack of data. To address this, we propose PokeFlex, a pilot dataset featuring real-world 3D mesh data of actively deformed objects, together with the corresponding forces applied by a robotic arm, using a simple poking strategy. Deformations are captured with a professional volumetric capture system that allows for complete 360-degree reconstruction. The PokeFlex dataset consists of five deformable objects with varying stiffness and shapes. Additionally, we leverage the PokeFlex dataset to train a vision model for online 3D mesh reconstruction from a single image and a template mesh. We refer readers to the supplementary material for demos and examples of our dataset.
+          </p-->
+          <p>
+            Data-driven methods have shown great potential in solving challenging manipulation tasks, however, their application in the domain of deformable objects has been constrained, in part, by the lack of data. To address this, we propose PokeFlex, a dataset featuring real-world paired and annotated multimodal data that includes 3D textured meshes, point clouds, RGB images, and depth maps. Such data can be leveraged for several downstream tasks such as online 3D mesh reconstruction and it can potentially enable underexplored applications such as the real-world deployment of traditional control methods based on mesh simulations. To deal with the challenges posed by real-world 3D mesh reconstruction, we leverage a professional volumetric capture system that allows complete 360° reconstruction. PokeFlex consists of 18 deformable objects with varying stiffness and shapes. Deformations are generated by dropping objects onto a flat surface or by poking the objects with a robot arm. Interaction forces and torques are also reported for the latter case. Using different data modalities, we demonstrated a use case for the PokeFlex dataset in online 3D mesh reconstruction. We refer the reader to our website or the supplementary material for demos and examples of our dataset.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe id=sup_video src="static/videos/pokeflex.mp4"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>   
+    
     
   </div>
 </section>
@@ -200,7 +208,19 @@
               <li>On mobile devices consider using landscape mode (Rotate your device).</li>
           </ul>
           </p>
-        </div>        
+        </div>     
+        
+        
+        <!-- Paper video. -->
+        <!--div class="columns is-centered has-text-centered"-->
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Video (Extended abstract)</h2>
+            <div class="publication-video">
+              <iframe id=sup_video src="static/videos/pokeflex.mp4"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        <!--/div-->   
         
     </div>
     </div>
@@ -212,13 +232,25 @@
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{authors,
-  author    = {Obrist, Jan and Zamora, Miguel and Zheng, Hehui and Zarate, Juan and Katzschmann, Robert K. and Coros, Stelian},
-  title     = {PokeFlex: Towards a Real-World Dataset of Deformable Objects for Robotic Manipulation},
-  journal   = {Extended Abstract, 40th Anniversary of the IEEE International Conference on Robotics and Automation. (ICRA@40 Rotterdam 2024)},
-  year      = {2024}
-}</code></pre>
+    <h2 class="title">BibTeX Full Version</h2>
+    <pre><code>@article{obrist2024pokeflex,
+      author    = {Obrist, Jan and Zamora, Miguel and Zheng, Hehui and Hinchet, Ronan and Ozdemir, Firat and Zarate, Juan and Katzschmann, Robert K. and Coros, Stelian},
+      title     = {PokeFlex: A Real-World Dataset of Deformable Objects for Robotics},
+      journal   = {Under review},
+      year      = {2024}
+      url       = {https://arxiv.org/abs/2409.17124}
+      }
+    </code></pre>
+
+    <h2 class="title">BibTeX Extended Abstract</h2>
+    <pre><code>@article{obrist2024towardspokeflex,
+      author    = {Obrist, Jan and Zamora, Miguel and Zheng, Hehui and Zarate, Juan and Katzschmann, Robert K. and Coros, Stelian},
+      title     = {PokeFlex: Towards a Real-World Dataset of Deformable Objects for Robotic Manipulation},
+      journal   = {Extended Abstract, 40th Anniversary of the IEEE International Conference on Robotics and Automation. (ICRA@40 Rotterdam 2024)},
+      year      = {2024},
+      url       = {https://arxiv.org/abs/2409.17124}
+      }
+    </code></pre>    
   </div>
 </section>
 
