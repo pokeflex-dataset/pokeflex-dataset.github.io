@@ -91,8 +91,7 @@
           </div>                                        
           <div class="is-size-7 publication-authors">                                                
             <span class="author-block"><sup>5</sup>Advanced Interactive Technologies Lab, Department of Computer Science, ETH Zurich</span>
-          </div>                                        
-
+          </div> 
           
 
           <div class="column has-text-centered">
@@ -108,12 +107,14 @@
                 </a>
               </span>
             </div>
-          </div>
-          
-          <div class="columns is-centered"></div>
+          </div>                    
+
+          <div class="columns is-centered">
             <div class="column has-text-centered">
-              <sup>+</sup> Website might take some time to load the first time.          
-            </div>
+              <div class="content has-text-centered">          
+                <p> * Website might take some time to load for the first time. </p>        
+              </div>  
+          </div>
           </div>
           
         </div>
@@ -122,36 +123,36 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="hero teaser"></section>
   <div class="container is-max-desktop">
     <div class="hero-body">
 
       <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
           <img src="./static/gifs/dice_poke_v2.gif" style="width:47.5%; object-fit: cover; object-position: center ;" />
-          <img src="./static/gifs/dice-unscreen_v2.gif" style="width:47.5%; object-fit: cover; object-position: center ;" />
+          <img src="./static/gifs/dice_static.gif" style="width:47.5%; object-fit: cover; object-position: center ;" />
       </div>
 
-    </div>
-  </div>
-</section>
+      <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">    
+        <img src="./static/gifs/Beanbag/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Cylinder/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Dice/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Foam/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/HalfSphere/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Octopus/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-
-      <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
-          <img src="./static/images/objects.png" style="width:100%; object-fit: cover; object-position: bottom ;" />
-
-          <img src="./static/gifs/octopus-unscreen.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
-          <img src="./static/gifs/paper2-unscreen.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
-          <img src="./static/gifs/duvet-2--unscreen.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
-          <img src="./static/gifs/dice-unscreen_v2.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
-          <img src="./static/gifs/couch2-unscreen.gif" style="width:19.5%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/PlushDice/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Pyramid/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Sponge/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/ToiletPaper/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />
+        <img src="./static/gifs/Turtle/static.gif" style="width:16%; object-fit: cover; object-position: bottom ;" />                
       </div>
+      <div class="content has-text-centered">          
+        <p>
+          PokeFlex is a dataset containing real-world paired and annotated multimodal data of deformable objects <br /> that includes 3D textured meshes, point clouds, RGB images, and depth maps.
+        </p>        
+      </div>  
+      
 
-      <h2 class="subtitle has-text-centered">
-        PokeFlex is a dataset containing 3D mesh models of deformable objects.
-      </h2>
     </div>
   </div>
 </section>
@@ -167,7 +168,7 @@
             Advancing robotic manipulation of deformable objects can enable automation of repetitive tasks across multiple industries, from food processing to textiles and healthcare. Yet robots struggle with the high dimensionality of deformable objects and their complex dynamics. While data-driven methods have shown potential for solving manipulation tasks, their application in the domain of deformable objects has been constrained by the lack of data. To address this, we propose PokeFlex, a pilot dataset featuring real-world 3D mesh data of actively deformed objects, together with the corresponding forces applied by a robotic arm, using a simple poking strategy. Deformations are captured with a professional volumetric capture system that allows for complete 360-degree reconstruction. The PokeFlex dataset consists of five deformable objects with varying stiffness and shapes. Additionally, we leverage the PokeFlex dataset to train a vision model for online 3D mesh reconstruction from a single image and a template mesh. We refer readers to the supplementary material for demos and examples of our dataset.
           </p-->
           <p>
-            Data-driven methods have shown great potential in solving challenging manipulation tasks, however, their application in the domain of deformable objects has been constrained, in part, by the lack of data. To address this, we propose PokeFlex, a dataset featuring real-world paired and annotated multimodal data that includes 3D textured meshes, point clouds, RGB images, and depth maps. Such data can be leveraged for several downstream tasks such as online 3D mesh reconstruction and it can potentially enable underexplored applications such as the real-world deployment of traditional control methods based on mesh simulations. To deal with the challenges posed by real-world 3D mesh reconstruction, we leverage a professional volumetric capture system that allows complete 360° reconstruction. PokeFlex consists of 18 deformable objects with varying stiffness and shapes. Deformations are generated by dropping objects onto a flat surface or by poking the objects with a robot arm. Interaction forces and torques are also reported for the latter case. Using different data modalities, we demonstrated a use case for the PokeFlex dataset in online 3D mesh reconstruction. We refer the reader to our website or the supplementary material for demos and examples of our dataset.
+            Data-driven methods have shown great potential in solving challenging manipulation tasks, however, their application in the domain of deformable objects has been constrained, in part, by the lack of data. To address this, we propose PokeFlex, a dataset featuring real-world paired and annotated multimodal data that includes 3D textured meshes, point clouds, RGB images, and depth maps. Such data can be leveraged for several downstream tasks such as online 3D mesh reconstruction and it can potentially enable underexplored applications such as the real-world deployment of traditional control methods based on mesh simulations. To deal with the challenges posed by real-world 3D mesh reconstruction, we leverage a professional volumetric capture system that allows complete 360° reconstruction. PokeFlex consists of 18 deformable objects with varying stiffness and shapes. Deformations are generated by dropping objects onto a flat surface or by poking the objects with a robot arm. Interaction forces and torques are also reported for the latter case. Using different data modalities, we demonstrated a use case for the PokeFlex dataset in online 3D mesh reconstruction.
           </p>
         </div>
       </div>
@@ -175,6 +176,78 @@
     <!--/ Abstract. -->
     
     
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Overview of objects</h2>   
+        <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/objects_18.png" style="width:100%; object-fit: cover; object-position: bottom ;" />
+        </div>
+        <!--h2 class="subtitle has-text-centered">
+          Rest-state reconstructed 3D meshes of all 18 objects featured in the PokeFlex dataset.
+        </h2-->
+
+      </div>
+      </div>
+      
+    </div>          
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Deformation sequences</h2>   
+        <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/sequence_v2.svg" style="width:100%; object-fit: cover; object-position: bottom ;" />
+        </div>
+        <div class="content has-text-centered">          
+          <p>
+            Top: Mesh reconstructions of foam dice for a poking sequence shown in every third frame.  <br />                  
+            Bottom: Mesh reconstructions of plush octopus for a dropping sequence.
+          </p>        
+        </div>        
+      </div>
+      </div>
+      
+    </div>          
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Data modalities</h2>   
+
+        <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/modalities_v3.svg" style="width:100%; object-fit: cover; object-position: bottom ;" />
+        </div>
+        
+      </div>
+      </div>
+      <!--h2 class="subtitle has-text-centered">         
+        <p>PokeFlex is a dataset containing real-world paired and annotated multimodal data of deformable objects that includes 3D textured meshes, point clouds, RGB images, and depth maps.  </p>          
+      </h2-->
+
+    </div>
+    </div>
   </div>
 </section>
 
@@ -211,8 +284,8 @@
         </div>     
         
         
-        <!-- Paper video. -->
-        <!--div class="columns is-centered has-text-centered"-->
+        <!-- Paper video.-->
+        <!--div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <h2 class="title is-3">Video (Extended abstract)</h2>
             <div class="publication-video">
@@ -220,7 +293,7 @@
                       frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
-        <!--/div-->   
+        </div-->   
         
     </div>
     </div>
@@ -229,6 +302,32 @@
 </section>
 
 
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Learning-based online 3D mesh reconstruction</h2>   
+        <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+          <img src="./static/images/img_architecture_v4_plain_web.png" style="width:100%; object-fit: cover; object-position: bottom ;" />
+        </div>
+        <div class="content has-text-justified">          
+          <p>
+            Superimposed representation of the proposed network architectures for ingesting the multi-modal PokeFlex data to predict deformed mesh reconstruction.
+          Inference rates across different data modalities range from 106 Hz to 215 Hz for dense point clouds and forces, respectively. 
+          (See paper for more details).
+          </p>
+        </div>        
+
+      </div>
+      </div>
+      
+    </div>          
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
