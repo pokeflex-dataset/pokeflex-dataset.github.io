@@ -48,6 +48,10 @@
     }
   </style>
 
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
 </head>
 <body>
 
@@ -382,6 +386,99 @@
           (See paper for more details).
           </p>
         </div>        
+
+      </div>
+      </div>
+      
+    </div>          
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <div class="columns is-centered">
+      <div class="column has-text-centered">
+
+        <h2 class="title is-3">Physical properties </h2>           
+        <div class="content has-text-justified">          
+          <p>
+              Physical properties of objects featured in the PokeFlex dataset. Dimensions of sphere-like objects are described by their diameter (D). Cylinder-like objects are characterized by their diameter (D) and height (H). For objects with irregular or complex shapes, dimensions are provided using a bounding box defined by length (L), width (W), and height (H). Stiffness of the objects is estimated using Hooke's law and applying RANSAC for linear regression to avoid outliers.
+
+            
+              \begin{array}{lllll}
+              \hline
+              \textbf{Object} & \textbf{Weight[g]} & \textbf{Dimensions [cm]} & \textbf{Est. stiffness [N/m]} & \textbf{Total Frames} & \textbf{Frames in contact}  \\
+              \hline                
+              \text{Beanbag}             & 184 & \text{DxH: } 26\text{x}9                 & 523  & 1084 & 363 \\ 
+              \text{Foam cylinder}       & 153 & \text{DxH: } 12\text{x}29                & 250  & 990  & 407 \\ 
+              \text{Foam dice}           & 140 & \text{L: } 15.5                          & 748  & 1220 & 738 \\ 
+              \text{Foam half sphere}    & 41  & \text{D: } 15                            & 1252 & 939  & 546 \\ 
+              \text{Memory foam}         & 213 & \text{LxWxH: } 17.5\text{x}8.5\text{x}7  & 395  & 958  & 282 \\ 
+              \text{Pillow}              & 975 & \text{LxWxH: } 58\text{x}50\text{x}10    & 474  & 1085 & 565 \\ 
+              \text{Plush dice}          & 340 & \text{L: } 22                            & 149  & 1259 & 567 \\ 
+              \text{Plush moon}          & 151 & \text{D: } 17                            & 366  & 959  & 517 \\ 
+              \text{Plush octopus}       & 130 & \text{LxWxH: } 22\text{x}22\text{x}11    & 325  & 1085 & 525 \\ 
+              \text{Plush turtle}        & 194 & \text{LxWxH: } 35\text{x}30\text{x}10    & 1035 & 930  & 427 \\ 
+              \text{Plush volleyball}    & 303 & \text{D: } 22                            & 323  & 939  & 488 \\ 
+              \text{Sponge}              & 28  & \text{LxWxH: } 22\text{x}12\text{x}6.1   & 1045 & 775  & 490 \\ 
+              \text{Toilet paper roll}   & 134 & \text{DxH: } 10.5\text{x}9.5             & 2156 & 920  & 411 \\ 
+              \text{3D printed bunny}    & 105 & \text{LxWxH: } 13\text{x}9\text{x}15     & 950  & 1117 & 520 \\ 
+              \text{3D printed cylinder} & 223 & \text{DxH: } 10\text{x}20                & 585  & 1020 & 574 \\ 
+              \text{3D printed heart}    & 100 & \text{LxWxH: } 16\text{x}9\text{x}10     & 1198 & 940  & 444 \\ 
+              \text{3D printed pizza}    & 68  & \text{LxWxH: } 18\text{x}15\text{x}3     & 884  & 958  & 360 \\ 
+              \text{3D printed pyramid}  & 48  & \text{LxWxH: } 14.5\text{x}14.5\text{x}7 & 861  & 899  & 386 \\                                 
+              \hline
+              \end{array}
+            
+          </p>
+        </div>        
+
+
+        <h2 class="title is-3">3D printed objects </h2>           
+        <div class="content has-text-justified">          
+          <p> All 3D printed objects were printed using thermoplastic polyurethane (TPU) Filaflex Shore 60A Pro White filament on Prusa MK3S+ and Prusa XL 3D printers equipped with 0.4mm nozzles. The mechanical properties of the filament are presented in the table below.
+              \begin{array}{lccc}
+              \hline
+              \textbf{Mechanical properties} & \textbf{Value} & \textbf{Unit} & \textbf{Test method according to} \\
+              \hline                
+              \text{Tensile strenght}         & 26 & \text{MPa}  & \text{DIN 53504-S2} \\ 
+              \text{Stress at 20% elongation} &  1 & \text{MPa}  & \text{DIN 53504-S2} \\ 
+              \hline
+              \end{array}
+            
+              The printing parameters of the 3D printed objects are summarized in the table below, where the infill used for all objects is the isotropic gyroid pattern with uniform properties and behavior in all directions.
+
+            
+              \begin{array}{lcccc}
+              \hline
+              \textbf{Object} & \textbf{Infill density} & \textbf{Layer thickness [mm]} & \textbf{Perimeters} & \textbf{Bottom layers} & \textbf{Top layers}  \\
+              \hline                
+              \text{Bunny}    & 10 & 0.2  & 3 & 3 & 3 \\ 
+              \text{Cylinder} & 10 & 0.15 & 2 & 3 & 3 \\ 
+              \text{Heart}    & 10 & 0.2  & 3 & 3 & 3 \\ 
+              \text{Pizza}    & 10 & 0.2  & 3 & 3 & 3 \\ 
+              \text{Pyramid}  & 8  & 0.2  & 3 & 3 & 3 \\                                               
+              \hline
+              \end{array}
+
+
+              
+          </p>
+        </div>        
+
+        <h2 class="title is-4">Gyroid patterns </h2>           
+        
+          <p> Top (Left) and bottom (Right) view of the 3D printed pyramid, with a close-up view of the gyroid infill pattern.
+          </p>           
+          <br>
+         
+          <div style="width: 100%; justify-content: center; align-items: center; margin: auto; text-align: center;">
+            <img src="./static/images/gyroid.png" style="width:80%; object-fit: cover; object-position: bottom ;" />
+          </div>
+        
 
       </div>
       </div>
